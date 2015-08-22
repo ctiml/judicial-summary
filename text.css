@@ -1,0 +1,34 @@
+.content-s4 {
+    background-color: #FAA;
+}
+.content-s6 {
+    background-color: #AFA;
+}
+.header-main {
+    background-color: #FFA;
+}
+.header1 {
+    background-color: #AAF;
+}
+.header2 {
+    background-color: #DDF;
+}
+input.cb {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+.bound {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+    background-color: #FF0;
+    font-size: 16px;
+    line-height: 1px;
+    font-family: 'Courier New';
+    text-align: center;
+}
