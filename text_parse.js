@@ -15,6 +15,7 @@ var startBound = $('<div/>').attr('draggable', 'true').on('dragstart', function(
 var endBound = $('<div/>').addClass('bound end-bound').text('end');
 
 var parseText = function(input, output) {
+  input = JSON.parse(input)["裁判全文"];
   lineCounter = 0;
   output.html('');
   summaries = [];
