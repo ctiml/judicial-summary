@@ -69,7 +69,7 @@ var parseText = function(input, output) {
     }
     if (summaries.length > 0) {
       console.log(JSON.stringify(summaries));
-      $('#json-text').text(JSON.stringify(summaries));
+      $('#json-text').val(JSON.stringify(summaries));
       importHighlight(summaries);
     }
   });
