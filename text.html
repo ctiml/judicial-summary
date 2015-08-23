@@ -22,6 +22,8 @@ URL: <input type="text" size="100" id="url" placeholder="請貼上判決的友�
 <div class="import"><button id="import-json">匯入</button></div>
 </div>
 <script>
+var demoUrl = 'http://jirs.judicial.gov.tw/FJUD/PrintFJUD03_0.aspx?jrecno=103%2c%E8%A8%B4%2c1627%2c20150212%2c1&v_court=TPB+%E8%87%BA%E5%8C%97%E9%AB%98%E7%AD%89%E8%A1%8C%E6%94%BF%E6%B3%95%E9%99%A2&v_sys=A&jyear=103&jcase=%E8%A8%B4&jno=1627&jdate=1040212&jcheck=1';
+$('#url').val(demoUrl);
 $('#parse').click(function(){
   var url = $('#url').val();
   var proxy_url = 'http://proxy.g0v.ronny.tw/proxy.php?url=' + encodeURIComponent(url);
