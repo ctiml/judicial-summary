@@ -130,9 +130,10 @@ var importHighlight = function(json_array) {
   $.each(json_array, function(i, json) {
     var lines = $('.line').slice(json.line_start, json.line_end + 1).addClass('marked');
     var summaryBox = $('<div></div>').addClass('summary-box');
-    var title = $('<div></div>').addClass('box-title').text('標題：' + json.title);
-    var summary = $('<div></div>').addClass('box-summary').text('摘要：' + json.summary);
-    summaryBox.append(title);
+    //var title = $('<div></div>').addClass('box-title').text('標題：' + json.title);
+    //var summary = $('<div></div>').addClass('box-summary').text('摘要：' + json.summary);
+    var summary = $('<div></div>').addClass('box-summary').html('標題：' + json.title + '<br>' + '摘要：' + json.summary);
+    //summaryBox.append(title);
     summaryBox.append(summary);
     lines.last().after(summaryBox);
     lines.last().after($('<div></div>').addClass('marked-split'));
