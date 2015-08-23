@@ -72,13 +72,17 @@ var parseText = function(input, output) {
       $('#json-text').val(JSON.stringify(summaries));
       importHighlight(summaries);
     }
+    startBound.detach();
+    endBound.detach();
   });
   $('#import-json').click(function() {
-      var json = $('#json-text').val();
-      if (json.length > 0) {
-        summaries = JSON.parse(json);
-        importHighlight(summaries);
-      }
+    var json = $('#json-text').val();
+    if (json.length > 0) {
+      summaries = JSON.parse(json);
+      importHighlight(summaries);
+    }
+    startBound.detach();
+    endBound.detach();
   });
   window.input = input;
   var lines = input.split(/\n/);
