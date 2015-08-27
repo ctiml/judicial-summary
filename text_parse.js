@@ -3,15 +3,7 @@ var startIndex;
 var endIndex;
 var summaries;
 
-var startBound = $('<div/>').attr('draggable', 'true').on('dragstart', function(ev) {
-  //console.log(ev);
-  //$(document).bind('mousemove', function(ev) {
-  //  console.log('move');
-  //});
-}).on('dragend', function(ev) {
-  //console.log('done');
-  //$(document).unbind('mousemove');
-}).addClass('bound start-bound').text('start');
+var startBound = $('<div/>').addClass('bound start-bound').text('start');
 var endBound = $('<div/>').addClass('bound end-bound').text('end');
 
 var parseText = function(input, output) {
